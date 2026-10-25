@@ -1,0 +1,22 @@
+{
+  "name": "weatherly-forecast",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -n frontend,backend -c blue,green \"vite\" \"npm --prefix backend run dev\"",
+    "dev:frontend": "vite",
+    "dev:backend": "npm --prefix backend run dev",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.2",
+    "vite": "^5.4.14"
+  }
+}
